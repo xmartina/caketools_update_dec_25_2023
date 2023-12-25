@@ -37,7 +37,7 @@ const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_ht
             ?>
         </h2>
         <form method="post" action="">
-            <div onclick="location.href='https://caketoolnftmarketplace.com/user/auth/login'" class="have-acct rounded d-flex align-items-center justify-content-evenly bg-primary text-white"><div class="icon-g"><span class="material-symbols-outlined px-3">person</span></div>
+            <div onclick="location.href='https://caketoolnftmarketplace.com/users/auth/login'" class="have-acct rounded d-flex align-items-center justify-content-evenly bg-primary text-white"><div class="icon-g"><span class="material-symbols-outlined px-3">person</span></div>
                 Login to Account</div>
             <div class="pt-3"></div>
             <div class="form-group">
