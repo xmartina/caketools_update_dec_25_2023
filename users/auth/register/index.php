@@ -22,7 +22,7 @@ const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_ht
             <?php
             if (isset($_GET['success'])) {
                 echo '<div class="success-msg text-success">
-                            Account Successfully Created <a href="/user/sign-in">login</a>
+                            Account Successfully Created <a href="/users/auth/login">login</a>
                           </div>';
             } elseif (isset($_GET['error_reg'])) {
                 echo '<div class="error-msg text-danger">
