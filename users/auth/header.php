@@ -1,6 +1,6 @@
 <?php
 // Include database connection file
-include('../../config/db_connect.php');
+include(rootDir.'config/db_connect.php');
 
 if (isset($_POST['register'])) {
     // Collect user input
@@ -38,16 +38,16 @@ elseif (isset($_POST['login'])) {
         if (password_verify($password, $row['password'])) {
             // Redirect to the dashboard
             $_SESSION['user_id'] = $row['id'];
-            header('Location: /user/sign-in/?login-success');
+            header("Location:".siteUrl. "users/login/?login-success");
             sleep(3);
-            header("Location: ../../user/dashboard");
+            header("Location:". siteUrl. "users/dashboard");
             exit();
         } else {
-            header('Location: /user/sign-in/?wrong-pass');
+            header("Location:" .siteUrl. "users/login/?wrong-pass");
             exit();
         }
     } else {
-        header('Location: /user/sign-in/?no-user');
+        header("Location:".siteUrl. "users/login/?no-user");
         exit();
     }
 }

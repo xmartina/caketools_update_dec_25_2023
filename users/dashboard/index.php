@@ -3,8 +3,14 @@ const siteUrl = 'https://caketoolnftmarketplace.com/';
 const basePath = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+
 // Start the session
 session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: dashboard.php");
+    exit();
+}
+
 
 // Check if 'user_id' is set in the URL parameters
 if (isset($_GET['user_id'])) {
@@ -22,12 +28,13 @@ if (isset($_GET['user_id'])) {
         exit();
     } else {
         // Handle the case where 'user_id' is not a valid number
-        header("Location: /auth?login");
+        header("Location:".siteUrl. "users/auth/login");
         exit();
     }
 } else {
     // Handle the case where 'user_id' is not set in the URL
-    header("Location: /auth?login");
+//    header("Location: /auth?login");
+    header("Location:".siteUrl. "users/auth/login");
     exit();
 }
 // Display dashboard content

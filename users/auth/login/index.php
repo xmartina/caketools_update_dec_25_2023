@@ -8,14 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 4 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/user/auth/auth.css">
+    <link rel="stylesheet" href="/users/auth/auth.css">
     <?php
     session_start();
     if (isset($_SESSION['user_id'])) {
-        header("Location: ../../user/dashboard");
+        header("Location:" .siteUrl. "users/dashboard");
         exit();
     }
-    require_once ('../auth/header.php');?>
+
+    require_once (rootDir.'users/auth/header.php');?>
     <title>User Login</title>
 </head>
 
