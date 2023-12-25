@@ -165,10 +165,7 @@ require_once('config.php'); ?>
                         <div data-items="primary">
                             <div class="site-branding" data-id="logo">
 
-                                <a href="<?= siteUrl ?>" class="site-logo-container" rel="home"><img width="571"
-                                                                                                     src="<?= siteLogo ?>"
-                                                                                                     class="default-logo"
-                                                                                                     alt="<?= siteName ?> | Logo">
+                                <a href="<?= siteUrl ?>" class="site-logo-container" rel="home"><img width="571" src="<?= siteLogo ?>" class="default-logo" alt="<?= siteName ?> | Logo">
                                 </a>
                             </div>
                         </div>
