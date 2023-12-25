@@ -1,6 +1,7 @@
 <?php
 const siteUrl = 'https://caketoolnftmarketplace.com/';
 const basePath = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
+const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
