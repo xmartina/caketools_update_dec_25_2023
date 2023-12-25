@@ -16,7 +16,7 @@ if (isset($_POST['logout'])){
     session_destroy();
 
 // Redirect to the login page or any other desired page after logout
-    header("Location:" . siteUrl . "auth/login");
+    header("Location:" . siteUrl . "users/auth/login");
     exit();
 
 
