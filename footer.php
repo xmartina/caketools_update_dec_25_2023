@@ -440,7 +440,7 @@
         // Check if the href starts with "https://wpsmartnft.com/" and does not end with ".png"
         if (href && href.startsWith('https://wpsmartnft.com/') && !href.endsWith('.png')) {
             // Update the href attribute
-            link.setAttribute('href', '/user/sign-in');
+            link.setAttribute('href', '/users/sign-in');
         }
     });
 </script>

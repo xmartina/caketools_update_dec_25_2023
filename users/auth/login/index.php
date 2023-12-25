@@ -74,5 +74,5 @@ const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_ht
         </form>
     </div>
 </div>
-<?php require_once('../auth/footer.php'); ?>
+<?php require_once(rootDir.'users/auth/footer.php'); ?>
 
