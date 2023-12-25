@@ -1,6 +1,8 @@
 <?php
-namespace \front_page\header\nav;
+namespace front_page\header;
+
 class Nav{
+
     public function __construct(){
         $p = $this;
 
