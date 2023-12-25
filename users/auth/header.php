@@ -15,11 +15,11 @@ if (isset($_POST['register'])) {
 
     if (mysqli_query($conn, $sql)) {
         // Registration success
-        header('Location: /user/register/?success');
+        header('Location:'. siteUrl . 'users/auth/register/?success');
         exit();
     } else {
         // Registration failed
-        header('Location: /user/register/?error_reg');
+        header('Location:'. siteUrl . 'users/auth/register/?error_reg');
         exit();
     }
 }
