@@ -7,7 +7,7 @@ class Nav{
         $p = $this;
 
         $p->home = "/";
-        $p->dashboard = '/user/dashboard';
-        $p->login = '/user/login';
+        $p->dashboard = '/users/dashboard';
+        $p->login = '/users/login';
     }
 }
