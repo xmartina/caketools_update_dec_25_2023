@@ -7,10 +7,11 @@ ini_set('display_errors', '1');
 // Start the session
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: dashboard.php");
+    header("Location:" .siteUrl."users/auth/login");
     exit();
 } elseif (isset($_SESSION['user_id'])){
     require_once ('all-nft/index.php');
+    exit();
 }
 
 // Display dashboard content
