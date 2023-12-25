@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
 require_once (rootDir.'front_page/header/nav.php');
 
-$nav = new \front_page\header\nav\Nav();
+$nav = new \front_page\header\Nav();
 
 require_once('config.php'); ?>
 <html lang="en-US" prefix="og: https://ogp.me/ns#">
