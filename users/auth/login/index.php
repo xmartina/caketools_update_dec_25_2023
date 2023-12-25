@@ -1,7 +1,8 @@
 <?php error_reporting(E_ALL);
 ini_set('display_errors', 1);
 const siteUrl = 'https://caketoolnftmarketplace.com/';
-const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';?>
+const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
+?>
 <!-- HTML form for login -->
 <!DOCTYPE html>
 <html lang="en">
