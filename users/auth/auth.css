@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
+
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.main-form{
+    height: 100vh;
+    width: 100%;
+    margin:0 auto;
+    background-color: #090f21;
+}
+@media (max-width:769px) {
+    .main-form{
+        padding:4px 15px
+    }
+}
+.form-wrap{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    color: #0A1420;
+}
+@media (max-width: 769px) {
+    .form-wrap{
+        max-width: 97%;
+    }
+}
+.form-wrap h2{
+    font-weight:bold;
+    font-size: 23px;
+}
+.form-wrap h2 .success-msg{
+    font-size:13px;
+    font-weight:bold;
+}
+.form-wrap h2 .error-msg{
+    font-size:13px;
+    font-weight:bold;
+}
+.have-acct{
+    width:190px;
+    height:39px;
+    font-size:14px;
+    cursor:pointer;
+}
+.have-acct:hover{
+    color:#0A1420!important;
+    background-color:#fff!important;
+    border:1px solid #0A1420 !important;
+    transition: all 350ms linear !important;
+}
+.form-wrap form{
+    width:360px;
+    margin: 0 auto;
+
+}
+form input{}
+@media (max-width: 769px) {
+    .form-wrap form{
+        width:95%;
+    }
+}
+.form-wrap form label{
+    font-weight:bold;
+    font-size:14px
+}
+.form-wrap form input{
+    width:100%;
+    height:35px;
+    background-color: #dadcdc;
+    color:#0A1420;
+    padding: 0 6px;
+    margin: auto;
+    border-radius: 4px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0 inset;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0 inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0 inset;
+    -o-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0 inset;
+}
+.form-wrap form input:hover{
+    border:1px solid #0b2e58;
+    background-color: #fcfffc;
+    transition: all 350ms linear;
+}
+.form-wrap form input:active{
+    border:1px solid #0A1420;
+    background-color:#fff;
+    font-size:13px;
+}
+.form-wrap form input[type="submit"]{
+    background-color: #0A1420;
+    color:#fff5f5;
+}
+.form-wrap form input[type="submit"]:hover{
+    background-color:#fff5f5;
+    color:#0A1420;
+    transition:all 230ms ease-in-out;
+    transform: scale(1.1);
+    box-shadow: none;
+}
