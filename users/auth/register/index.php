@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 4 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/user/auth/auth.css">
+    <link rel="stylesheet" href="/users/auth/auth.css">
     <title>User Register</title>
 </head>
 <body>
-<?php require_once('../auth/header.php'); ?>
+<?php require_once(rootDir.'users/auth/header.php'); ?>
 
 <div class="main-form d-flex align-items-center justify-content-center">
     <div class="form-wrap d-flex align-items-center flex-column px-4">
