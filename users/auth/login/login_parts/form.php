@@ -22,7 +22,7 @@
                 window.onload = redirectToDashboard;
             </script>
     <?php } ?>
-    <div class="form-floating form-floating-outline mb-3">
+    <div class="<?php if (isset($_GET['login-success'])){ ?> d-none <?php } ?> form-floating form-floating-outline mb-3">
         <input
             type="text"
             class="form-control"
@@ -32,7 +32,7 @@
             autofocus />
         <label for="email">Email or Username</label>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 <?php if (isset($_GET['login-success'])){ ?> d-none <?php } ?>">
         <div class="form-password-toggle">
             <div class="input-group input-group-merge">
                 <div class="form-floating form-floating-outline">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="mb-3 d-flex justify-content-between">
+    <div class=" <?php if (isset($_GET['login-success'])){ ?> d-none <?php } ?> mb-3 d-flex justify-content-between">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" id="remember-me" />
             <label class="form-check-label" for="remember-me"> Remember Me </label>
@@ -58,7 +58,7 @@
             <span>Forgot Password?</span>
         </a>
     </div>
-    <div class="mb-3">
+    <div class="<?php if (isset($_GET['login-success'])){ ?> d-none <?php } ?> mb-3">
         <button class="btn btn-primary d-grid w-100" type="submit" name="login">Sign in</button>
     </div>
 </form>
