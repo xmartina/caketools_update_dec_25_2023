@@ -22,13 +22,13 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="form-floating form-floating-outline mb-3">
-                <input type="text" class="form-control" id="fname" name="first_name" placeholder="Enter your First Name" />
+                <input required min="3" type="text" class="form-control" id="fname" name="first_name" placeholder="Enter your First Name" />
                 <label for="fname">First Name</label>
             </div>
         </div>
         <div class="col-lg-6">
             <div class="form-floating form-floating-outline mb-3">
-                <input type="text" class="form-control" id="lname" name="last_name" placeholder="Enter your Last Name" />
+                <input min="3" type="text" class="form-control" id="lname" name="last_name" placeholder="Enter your Last Name" />
                 <label for="lname">Last Name</label>
             </div>
         </div>
@@ -37,6 +37,8 @@
 
     <div class="form-floating form-floating-outline mb-3">
         <input
+            required
+            min="6"
             type="text"
             class="form-control"
             id="username"
@@ -46,13 +48,15 @@
         <label for="username">Username</label>
     </div>
     <div class="form-floating form-floating-outline mb-3">
-        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+        <input min="6" required type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
         <label for="email">Email</label>
     </div>
     <div class="mb-3 form-password-toggle">
         <div class="input-group input-group-merge">
             <div class="form-floating form-floating-outline">
                 <input
+                    required
+                    min="6"
                     type="password"
                     id="password"
                     class="form-control"
