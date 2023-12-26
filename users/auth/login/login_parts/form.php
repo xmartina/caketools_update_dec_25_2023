@@ -16,7 +16,7 @@
             <script>
                 function redirectToDashboard() {
                     setTimeout(function () {
-                        window.location.href = '<?= siteUrl ?>users/dashboard';
+                        window.location.href = '/users/dashboard';
                     }, 3000);
                 }
                 window.onload = redirectToDashboard;
