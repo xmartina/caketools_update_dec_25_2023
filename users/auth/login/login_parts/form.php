@@ -1,4 +1,19 @@
-<form  class="mb-3" action="" method="post" >
+<form class="mb-3" action="" method="post" >
+    <?php
+        if (isset($_GET['wrong-pass'])) {
+            echo '<div class="error-msg text-danger">
+                        your password is incorrect, please check and try again
+                  </div>';
+        } elseif (isset($_GET['no-user'])) {
+            echo '<div class="error-msg text-danger">
+                                Sorry this user was not found, please check and try again
+                              </div>';
+        } elseif (isset($_GET['login-success'])){
+            echo '<div class="success-msg text-success">
+                                login successful, <a href="/user/dashboard">redirecting to dashboard</a>
+                              </div>';
+        }
+    ?>
     <div class="form-floating form-floating-outline mb-3">
         <input
             type="text"
