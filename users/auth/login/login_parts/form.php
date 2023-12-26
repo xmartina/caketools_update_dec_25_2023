@@ -1,15 +1,15 @@
 <form class="mb-3" action="" method="post" >
     <?php
         if (isset($_GET['wrong-pass'])) {
-            echo '<div class="error-msg text-danger pb-2">
+            echo '<div class="error-msg text-danger pb-3 mb-2 text-center">
                         your password is incorrect, please check and try again
                   </div>';
         } elseif (isset($_GET['no-user'])) {
-            echo '<div class="error-msg text-danger pb-2">
+            echo '<div class="error-msg text-danger pb-3 mb-2 text-center">
                                 Sorry this user was not found, please check and try again
                               </div>';
         } elseif (isset($_GET['login-success'])){
-            echo '<div class="success-msg text-success pb-2">
+            echo '<div class="success-msg text-success pb-3 mb-2 text-center">
                                 login successful, <a href="/user/dashboard">redirecting to dashboard</a>
                               </div>';
         }
