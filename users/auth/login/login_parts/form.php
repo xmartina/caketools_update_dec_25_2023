@@ -1,4 +1,4 @@
-<form id="formAuthentication" class="mb-3" action="" method="post">
+<form id="formAuthentication" class="mb-3" action="<?= siteUrl ?>users/auth/includes/core.php" method="post" >
     <div class="form-floating form-floating-outline mb-3">
         <input
             type="text"
