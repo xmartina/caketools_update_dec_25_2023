@@ -37,9 +37,10 @@ elseif (isset($_POST['login'])) {
         // Verify the password
         if (password_verify($password, $row['password'])) {
             // Redirect to the dashboard
+//            $_SESSION['user_id'] = $row['id'];
+            header("Location:".siteUrl. "users/auth/login?login-success");
+            sleep(3);
             $_SESSION['user_id'] = $row['id'];
-//            header("Location:".siteUrl. "users/auth/login?login-success");
-//            sleep(3);
             header("Location:". siteUrl. "users/dashboard");
             exit();
         } else {
