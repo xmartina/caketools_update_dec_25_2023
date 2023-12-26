@@ -1,5 +1,7 @@
 <?php
     include_once (rootDir.'config/generalSettings.php');
+    $settings = new config\generalSettings();
+    $settings->siteLogo();
     include_once (rootDir.'users/auth/includes/core.php');
 ?>
 <!DOCTYPE html>
