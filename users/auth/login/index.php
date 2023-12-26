@@ -1,6 +1,8 @@
 <?php
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
+    $settings = new config\generalSettings();
+    $settings->siteLogo();
     const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
     include_once (rootDir.'users/auth/partials/header/login_header.php');
 ?>
@@ -13,7 +15,7 @@
                 <!-- Logo -->
                 <div class="app-brand justify-content-center mt-5">
                     <a href="/" class="app-brand-link gap-2">
-                    <img src="<?= $settings->generalSite()->siteLogo ?>">
+                    <img src="<?= $settings->siteLogo; ?>">
                     </a>
                 </div>
                 <!-- /Logo -->
