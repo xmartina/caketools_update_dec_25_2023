@@ -48,7 +48,7 @@
         <label for="username">Username</label>
     </div>
     <div class="form-floating form-floating-outline mb-3">
-        <input min="6" required type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+        <input min="6" required type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
         <label for="email">Email</label>
     </div>
     <div class="mb-3 form-password-toggle">
