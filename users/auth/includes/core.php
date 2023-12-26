@@ -10,16 +10,36 @@ if (isset($_POST['register'])) {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
 
+    // Check if email already exists
+    $emailCheckQuery = "SELECT * FROM users WHERE email = '$email'";
+    $emailCheckResult = mysqli_query($conn, $emailCheckQuery);
+
+    if (mysqli_num_rows($emailCheckResult) > 0) {
+        // Email already exists
+        header('Location:' . siteUrl . 'users/auth/register/?error=email-exists');
+        exit();
+    }
+
+    // Check if username already exists
+    $usernameCheckQuery = "SELECT * FROM users WHERE user_name = '$user_name'";
+    $usernameCheckResult = mysqli_query($conn, $usernameCheckQuery);
+
+    if (mysqli_num_rows($usernameCheckResult) > 0) {
+        // Username already exists
+        header('Location:' . siteUrl . 'users/auth/register/?error=username-exists');
+        exit();
+    }
+
     // Insert user data into the database
     $sql = "INSERT INTO users (user_name, password, email, first_name, last_name) VALUES ('$user_name', '$password', '$email', '$first_name', '$last_name')";
 
     if (mysqli_query($conn, $sql)) {
         // Registration success
-        header('Location:'. siteUrl . 'users/auth/register?reg-success');
+        header('Location:' . siteUrl . 'users/auth/register?reg-success');
         exit();
     } else {
         // Registration failed
-        header('Location:'. siteUrl . 'users/auth/register/?error_reg');
+        header('Location:' . siteUrl . 'users/auth/register/?error_reg');
         exit();
     }
 }
