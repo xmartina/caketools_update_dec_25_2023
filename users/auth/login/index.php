@@ -4,7 +4,14 @@
     const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
     include_once (rootDir.'config/sitePartials.php');
     include_once (rootDir.'users/auth/partials/header/login_header.php');
+
+    session_start();
+    if (isset($_SESSION['user_id'])) {
+        header("Location:" .siteUrl."users/dashboard");
+        exit();
+    }
 ?>
+
 
 <div class="position-relative">
     <div class="authentication-wrapper authentication-basic container-p-y">
