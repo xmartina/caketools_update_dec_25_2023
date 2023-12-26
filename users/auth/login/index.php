@@ -1,4 +1,5 @@
 <?php
+    session_start();
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
     const rootDir = '/home/multistream6/domains/caketoolnftmarketplace.com/public_html/';
@@ -6,7 +7,7 @@
     include_once (rootDir.'users/auth/partials/header/login_header.php');
     include_once (rootDir.'users/auth/includes/core.php');
 
-    session_start();
+
     if (isset($_SESSION['user_id'])) {
         header("Location:" .siteUrl."users/dashboard");
         exit();
