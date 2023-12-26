@@ -33,9 +33,9 @@
 
                   <?php include_once (rootDir.'users/auth/login/login_parts/form.php'); ?>
 
-                    <p class="text-center">
+                    <p class="<?php if (isset($_GET['login-success'])){ ?> d-none <?php } ?> text-center">
                         <span>New on our platform?</span>
-                        <a href="auth-register-basic.html">
+                        <a href="<?=siteUrl ?>users/auth/register">
                             <span>Create an account</span>
                         </a>
                     </p>
@@ -44,7 +44,7 @@
                         <div class="divider-text">or</div>
                     </div>
 
-                    <div class="d-flex justify-content-center gap-2">
+                    <div class="<?php if (isset($_GET['login-success'])){ ?> d-none <?php } ?> d-flex justify-content-center gap-2">
                         <a href="javascript:;" class="btn btn-icon btn-lg rounded-pill btn-text-facebook">
                             <i class="tf-icons mdi mdi-24px mdi-facebook"></i>
                         </a>
