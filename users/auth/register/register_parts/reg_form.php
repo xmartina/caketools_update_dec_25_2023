@@ -1,10 +1,27 @@
-<form id="formAuthentication" class="mb-3" action="index.html" method="GET">
+<!--<form id="formAuthentication" class="mb-3" action="" method="post">-->
+<form class="mb-3" action="" method="post">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-floating form-floating-outline mb-3">
+                <input type="text" class="form-control" id="fname" name="first_name" placeholder="Enter your First Name" />
+                <label for="fname">First Name</label>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-floating form-floating-outline mb-3">
+                <input type="text" class="form-control" id="lname" name="last_name" placeholder="Enter your Last Name" />
+                <label for="lname">Last Name</label>
+            </div>
+        </div>
+    </div>
+
+
     <div class="form-floating form-floating-outline mb-3">
         <input
             type="text"
             class="form-control"
             id="username"
-            name="username"
+            name="user_name"
             placeholder="Enter your username"
             autofocus />
         <label for="username">Username</label>
@@ -38,5 +55,5 @@
             </label>
         </div>
     </div>
-    <button class="btn btn-primary d-grid w-100">Sign up</button>
+    <button class="btn btn-primary d-grid w-100" name="register" type="submit">Sign up</button>
 </form>
