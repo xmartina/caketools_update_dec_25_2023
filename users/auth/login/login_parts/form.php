@@ -10,10 +10,18 @@
                               </div>';
         } elseif (isset($_GET['login-success'])){
             echo '<div class="success-msg text-success pb-3 mb-2 text-center">
-                                login successful, <a href="/user/dashboard">redirecting to dashboard</a>
+                                login successful, <a href="/users/dashboard">redirecting to dashboard</a>
                               </div>';
-        }
     ?>
+            <script>
+                function redirectToDashboard() {
+                    setTimeout(function () {
+                        window.location.href = '<?= siteUrl ?>users/dashboard';
+                    }, 3000);
+                }
+                window.onload = redirectToDashboard;
+            </script>
+    <?php } ?>
     <div class="form-floating form-floating-outline mb-3">
         <input
             type="text"
