@@ -1,5 +1,24 @@
 <!--<form id="formAuthentication" class="mb-3" action="" method="post">-->
 <form class="mb-3" action="" method="post">
+    <?php
+    if (isset($_GET['error_reg'])) {
+        echo '<div class="error-msg text-danger pb-3 mb-2 text-center">
+                        There was an error in your registration, please refresh this page and try again
+                  </div>';
+    } elseif (isset($_GET['reg-success'])){
+        echo '<div class="success-msg text-success pb-3 mb-2 text-center">
+                                Registration successful, <a href="/users/auth/login">redirecting to login page</a>
+                              </div>';
+        ?>
+        <script>
+            function redirectToDashboard() {
+                setTimeout(function () {
+                    window.location.href = '/users/auth/login';
+                }, 3000);
+            }
+            window.onload = redirectToDashboard;
+        </script>
+    <?php } ?>
     <div class="row">
         <div class="col-lg-6">
             <div class="form-floating form-floating-outline mb-3">
