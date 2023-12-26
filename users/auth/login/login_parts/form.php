@@ -12,7 +12,6 @@
             echo '<div class="success-msg text-success pb-3 mb-2 text-center">
                                 login successful, <a href="/users/dashboard">redirecting to dashboard</a>
                               </div>';
-            $_SESSION['user_id'] = $row['id'];
     ?>
             <script>
                 function redirectToDashboard() {
