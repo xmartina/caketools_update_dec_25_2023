@@ -13,7 +13,7 @@
                 <!-- Logo -->
                 <div class="app-brand justify-content-center mt-5">
                     <a href="/" class="app-brand-link gap-2">
-                    <img src="<?= $settings->siteLogo; ?>">
+                    <img src="<?= $settings->siteLogo; ?>" class="<?= $settings->logoClass; ?>">
                     </a>
                 </div>
                 <!-- /Logo -->
