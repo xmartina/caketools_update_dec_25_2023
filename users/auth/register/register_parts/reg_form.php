@@ -1,5 +1,5 @@
-<!--<form id="formAuthentication" class="mb-3" action="" method="post">-->
-<form class="mb-3" action="" method="post">
+<form id="formAuthentication" class="mb-3" action="" method="post">
+<!--<form class="mb-3" action="" method="post">-->
     <?php
     if (isset($_GET['error_reg'])) {
         echo '<div class="error-msg text-danger pb-3 mb-2 text-center">
