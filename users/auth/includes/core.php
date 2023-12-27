@@ -16,7 +16,7 @@ if (isset($_POST['register'])) {
 
     if (mysqli_num_rows($emailCheckResult) > 0) {
         // Email already exists
-        header('Location:' . siteUrl . 'users/auth/register?error=email-exists');
+        header('Location:' . siteUrl . 'users/auth/register?email-exists');
         exit();
     }
 
@@ -26,7 +26,7 @@ if (isset($_POST['register'])) {
 
     if (mysqli_num_rows($usernameCheckResult) > 0) {
         // Username already exists
-        header('Location:' . siteUrl . 'users/auth/register?error=username-exists');
+        header('Location:' . siteUrl . 'users/auth/register?username-exists');
         exit();
     }
 

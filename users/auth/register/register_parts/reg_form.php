@@ -5,11 +5,11 @@
         echo '<div class="error-msg text-danger pb-3 mb-2 text-center">
                         There was an error in your registration, please refresh this page and try again
                   </div>';
-    } elseif (isset($_GET['error=email-exists'])) { ?>
+    } elseif (isset($_GET['email-exists'])) { ?>
         <div class="error-msg text-danger pb-3 mb-2 text-center">
             Sorry, this email have been already recorded in our platform, if you own this email,<a href="<?=siteUrl ?>users/auth/forgotten_pass"> click here to recover your account </a>
         </div>
-    <?php } elseif (isset($_GET['error=username-exists'])) {
+    <?php } elseif (isset($_GET['username-exists'])) {
         echo '<div class="error-msg text-danger pb-3 mb-2 text-center">
                         Sorry, this username have already been used by another user, please try a different one
                   </div>';
